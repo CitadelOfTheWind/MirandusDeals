@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- dev mode -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- release mode -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://citadelofthewind.com/wp-content/mirandusdeals/styles.css?v1"
+    /> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- dev mode -->
+    <script src="dealsbuilder.js"></script>
+    <script src="shopdata.js"></script>
+    <script src="main.js"></script>
+    <script src="tempAssetList.js"></script>
+
+    <!-- release mode -->
+    <!-- <script src="https://citadelofthewind.com/wp-content/mirandusdeals/dealsbuilder.js?v1"></script>
+    <script src="https://citadelofthewind.com/wp-content/mirandusdeals/shopdata.js?v1"></script>
+    <script src="https://citadelofthewind.com/wp-content/mirandusdeals/main.js?v1"></script> -->
+  </head>
+  <body onload="initialize()">
+    <div class="container">
+      <div class="row header">
+        <div class="col-8 title">
+          Mirandus Building Deals
+          <img
+            src="https://citadelofthewind.com/wp-content/mirandusdeals/images/alpha.png"
+            width="90"
+            height="36"
+          />
+        </div>
+        <div class="col-4">
+          <input
+            type="button"
+            id="Refresh"
+            onclick="refresh()"
+            value="Refresh"
+          />
+        </div>
+      </div>
+      <div
+        class="row collapsible"
+        data-bs-toggle="collapse"
+        aria-expanded="false"
+        aria-controls="filtercontent"
+        role="button"
+        href="#filtercontent"
+      >
+        <div>Filter</div>
+      </div>
+      <div class="row content collapse" id="filtercontent">
+        <div class="row">
+          <div class="col-1">Token</div>
+          <div class="col-2">
+            <select id="Token" onchange="filterPageDeals()"></select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">Size</div>
+          <div class="col-2">
+            <select id="Size" onchange="filterPageDeals()"></select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">Rarity</div>
+          <div class="col-2">
+            <select id="Rarity" onchange="filterPageDeals()"></select>
+          </div>
+        </div>
+      </div>
+      <div id="DealsList"></div>
+    </div>
+  </body>
+</html>

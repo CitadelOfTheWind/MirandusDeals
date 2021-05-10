@@ -1,0 +1,458 @@
+[
+  {
+    "name": "Homestead",
+    "rarity": "uncommon",
+    "size": "",
+    "token_id": "31305977756726338638630463883722675453952"
+  },
+  {
+    "name": "Farming Hamlet",
+    "rarity": "rare",
+    "size": "",
+    "token_id": "30625413022884461711703714668859139031040"
+  },
+  {
+    "name": "Outpost",
+    "rarity": "rare",
+    "size": "",
+    "token_id": "30965695389805400175167089276290907242496"
+  },
+  {
+    "name": "Ranching Hamlet",
+    "rarity": "rare",
+    "size": "",
+    "token_id": "30285130655963523248240340061427370819584"
+  },
+  {
+    "name": "Village of the Baron",
+    "rarity": "epic",
+    "size": "",
+    "token_id": "29604565922121646321313590846563834396672"
+  },
+  {
+    "name": "Village of the Farmer",
+    "rarity": "epic",
+    "size": "",
+    "token_id": "29944848289042584784776965453995602608128"
+  },
+  {
+    "name": "Village of the Viscount",
+    "rarity": "epic",
+    "size": "",
+    "token_id": "29264283555200707857850216239132066185216"
+  },
+  {
+    "name": "Village of the Earl",
+    "rarity": "epic",
+    "size": "",
+    "token_id": "28924001188279769394386841631700297973760"
+  },
+  {
+    "name": "Town of the Duke",
+    "rarity": "legendary",
+    "size": "",
+    "token_id": "28243436454437892467460092416836761550848"
+  },
+  {
+    "name": "Town of the Marquess",
+    "rarity": "legendary",
+    "size": "",
+    "token_id": "28583718821358830930923467024268529762304"
+  },
+  {
+    "name": "Town of the Prince",
+    "rarity": "legendary",
+    "size": "",
+    "token_id": "27903154087516954003996717809404993339392"
+  },
+  {
+    "name": "Town of the Arch Duke",
+    "rarity": "legendary",
+    "size": "",
+    "token_id": "27562871720596015540533343201973225127936"
+  },
+  {
+    "name": "Citadel of the Earth",
+    "rarity": "ancient",
+    "size": "",
+    "token_id": "25861459885991323223216470164814384070656"
+  },
+  {
+    "name": "Citadel of the Wind",
+    "rarity": "ancient",
+    "size": "",
+    "token_id": "26201742252912261686679844772246152282112"
+  },
+  {
+    "name": "Citadel of the Moon",
+    "rarity": "ancient",
+    "size": "",
+    "token_id": "26542024619833200150143219379677920493568"
+  },
+  {
+    "name": "Citadel of the Sun",
+    "rarity": "ancient",
+    "size": "",
+    "token_id": "26882306986754138613606593987109688705024"
+  },
+  {
+    "name": "Citadel of the Stars",
+    "rarity": "ancient",
+    "size": "",
+    "token_id": "27222589353675077077069968594541456916480"
+  },
+  {
+    "name": "Hitching Post",
+    "rarity": "common",
+    "size": "5x5",
+    "token_id": "50361790304298892592579441899901695295488"
+  },
+  {
+    "name": "Simple Storehouse",
+    "rarity": "common",
+    "size": "5x5",
+    "token_id": "50702072671219831056042816507333463506944"
+  },
+  {
+    "name": "Meat Stand",
+    "rarity": "uncommon",
+    "size": "5x5",
+    "token_id": "62611955513452677277260927767445350907904"
+  },
+  {
+    "name": "Grain Stand",
+    "rarity": "uncommon",
+    "size": "5x5",
+    "token_id": "37431060361303230980971206817494503260160"
+  },
+  {
+    "name": "Simple Forge",
+    "rarity": "uncommon",
+    "size": "5x5",
+    "token_id": "37771342728224169444434581424926271471616"
+  },
+  {
+    "name": "Simple Granary",
+    "rarity": "uncommon",
+    "size": "5x5",
+    "token_id": "43215860598959184859848575143834562854912"
+  },
+  {
+    "name": "Bread Stand",
+    "rarity": "uncommon",
+    "size": "5x5",
+    "token_id": "43556142965880123323311949751266331066368"
+  },
+  {
+    "name": "Armor Stand",
+    "rarity": "uncommon",
+    "size": "5x5",
+    "token_id": "43896425332801061786775324358698099277824"
+  },
+  {
+    "name": "Weapon Stand",
+    "rarity": "uncommon",
+    "size": "5x5",
+    "token_id": "44236707699722000250238698966129867489280"
+  },
+  {
+    "name": "Woodworking Stand",
+    "rarity": "uncommon",
+    "size": "5x5",
+    "token_id": "49681225570457015665652692685038158872576"
+  },
+  {
+    "name": "Archery Stand",
+    "rarity": "uncommon",
+    "size": "5x5",
+    "token_id": "50021507937377954129116067292469927084032"
+  },
+  {
+    "name": "Potion Stand",
+    "rarity": "uncommon",
+    "size": "5x5",
+    "token_id": "59549414211164231106090556300559437004800"
+  },
+  {
+    "name": "Milking Stand",
+    "rarity": "uncommon",
+    "size": "5x5",
+    "token_id": "61250826045768923423407429337718278062080"
+  },
+  {
+    "name": "Tavern",
+    "rarity": "common",
+    "size": "10x10",
+    "token_id": "38111625095145107907897956032358039683072"
+  },
+  {
+    "name": "Barn",
+    "rarity": "common",
+    "size": "10x10",
+    "token_id": "38451907462066046371361330639789807894528"
+  },
+  {
+    "name": "Mill",
+    "rarity": "uncommon",
+    "size": "10x10",
+    "token_id": "36750495627461354054044457602630966837248"
+  },
+  {
+    "name": "Forge",
+    "rarity": "uncommon",
+    "size": "10x10",
+    "token_id": "37090777994382292517507832210062735048704"
+  },
+  {
+    "name": "Granary",
+    "rarity": "uncommon",
+    "size": "10x10",
+    "token_id": "41854731131275431005995076714107490009088"
+  },
+  {
+    "name": "Bakery",
+    "rarity": "uncommon",
+    "size": "10x10",
+    "token_id": "42195013498196369469458451321539258220544"
+  },
+  {
+    "name": "Armor Shop",
+    "rarity": "uncommon",
+    "size": "10x10",
+    "token_id": "42535295865117307932921825928971026432000"
+  },
+  {
+    "name": "Weapon Shop",
+    "rarity": "uncommon",
+    "size": "10x10",
+    "token_id": "42875578232038246396385200536402794643456"
+  },
+  {
+    "name": "Archery",
+    "rarity": "uncommon",
+    "size": "10x10",
+    "token_id": "48320096102773261811799194255311086026752"
+  },
+  {
+    "name": "Woodshop",
+    "rarity": "uncommon",
+    "size": "10x10",
+    "token_id": "48660378469694200275262568862742854238208"
+  },
+  {
+    "name": "Storehouse",
+    "rarity": "uncommon",
+    "size": "10x10",
+    "token_id": "49000660836615138738725943470174622449664"
+  },
+  {
+    "name": "Stable",
+    "rarity": "uncommon",
+    "size": "10x10",
+    "token_id": "49340943203536077202189318077606390661120"
+  },
+  {
+    "name": "Temple",
+    "rarity": "uncommon",
+    "size": "10x10",
+    "token_id": "52063202138903584909896314937060536352768"
+  },
+  {
+    "name": "Dairy",
+    "rarity": "uncommon",
+    "size": "10x10",
+    "token_id": "60910543678847984959944054730286509850624"
+  },
+  {
+    "name": "Butchery",
+    "rarity": "uncommon",
+    "size": "10x10",
+    "token_id": "62952237880373615740724302374877119119360"
+  },
+  {
+    "name": "Brewery",
+    "rarity": "uncommon",
+    "size": "10x10",
+    "token_id": "69757885218792385009991794523512483348480"
+  },
+  {
+    "name": "Potion Shop",
+    "rarity": "rare",
+    "size": "10x10",
+    "token_id": "59889696578085169569553930907991205216256"
+  },
+  {
+    "name": "Large Barn",
+    "rarity": "rare",
+    "size": "10x20",
+    "token_id": "36069930893619477127117708387767430414336"
+  },
+  {
+    "name": "Large Tavern",
+    "rarity": "rare",
+    "size": "10x20",
+    "token_id": "36410213260540415590581082995199198625792"
+  },
+  {
+    "name": "Large Forge",
+    "rarity": "epic",
+    "size": "10x20",
+    "token_id": "35049083792856661736727584565472125779968"
+  },
+  {
+    "name": "Large Mill",
+    "rarity": "epic",
+    "size": "10x20",
+    "token_id": "35389366159777600200190959172903893991424"
+  },
+  {
+    "name": "Large Granary",
+    "rarity": "epic",
+    "size": "10x20",
+    "token_id": "40493601663591677152141578284380417163264"
+  },
+  {
+    "name": "Large Bakery",
+    "rarity": "epic",
+    "size": "10x20",
+    "token_id": "40833884030512615615604952891812185374720"
+  },
+  {
+    "name": "Large Armor Shop",
+    "rarity": "epic",
+    "size": "10x20",
+    "token_id": "41174166397433554079068327499243953586176"
+  },
+  {
+    "name": "Large Weapon Shop",
+    "rarity": "epic",
+    "size": "10x20",
+    "token_id": "41514448764354492542531702106675721797632"
+  },
+  {
+    "name": "Large Woodshop",
+    "rarity": "epic",
+    "size": "10x20",
+    "token_id": "46958966635089507957945695825584013180928"
+  },
+  {
+    "name": "Large Archery",
+    "rarity": "epic",
+    "size": "10x20",
+    "token_id": "47299249002010446421409070433015781392384"
+  },
+  {
+    "name": "Large Stable",
+    "rarity": "epic",
+    "size": "10x20",
+    "token_id": "47639531368931384884872445040447549603840"
+  },
+  {
+    "name": "Large Storehouse",
+    "rarity": "epic",
+    "size": "10x20",
+    "token_id": "47979813735852323348335819647879317815296"
+  },
+  {
+    "name": "Large Temple",
+    "rarity": "epic",
+    "size": "10x20",
+    "token_id": "51722919771982646446432940329628768141312"
+  },
+  {
+    "name": "Large Dairy",
+    "rarity": "epic",
+    "size": "10x20",
+    "token_id": "60570261311927046496480680122854741639168"
+  },
+  {
+    "name": "Large Butchery",
+    "rarity": "epic",
+    "size": "10x20",
+    "token_id": "63292520247294554204187676982308887330816"
+  },
+  {
+    "name": "Large Brewery",
+    "rarity": "epic",
+    "size": "10x20",
+    "token_id": "70098167585713323473455169130944251559936"
+  },
+  {
+    "name": "Grand Tavern",
+    "rarity": "rare",
+    "size": "20x20",
+    "token_id": "35729648526698538663654333780335662202880"
+  },
+  {
+    "name": "Grand Granary",
+    "rarity": "epic",
+    "size": "20x20",
+    "token_id": "39472754562828861761751454462085112528896"
+  },
+  {
+    "name": "Grand Armor Shop",
+    "rarity": "epic",
+    "size": "20x20",
+    "token_id": "39813036929749800225214829069516880740352"
+  },
+  {
+    "name": "Grand Weapon Shop",
+    "rarity": "epic",
+    "size": "20x20",
+    "token_id": "40153319296670738688678203676948648951808"
+  },
+  {
+    "name": "Grand Stable",
+    "rarity": "epic",
+    "size": "20x20",
+    "token_id": "46278401901247631031018946610720476758016"
+  },
+  {
+    "name": "Grand Storehouse",
+    "rarity": "epic",
+    "size": "20x20",
+    "token_id": "46618684268168569494482321218152244969472"
+  },
+  {
+    "name": "Grand Temple",
+    "rarity": "epic",
+    "size": "20x20",
+    "token_id": "52743766872745461836823064151924072775680"
+  },
+  {
+    "name": "Large Potion Shop",
+    "rarity": "legendary",
+    "size": "10x20",
+    "token_id": "60229978945006108033017305515422973427712"
+  },
+  {
+    "name": "Majestic Forge",
+    "rarity": "legendary",
+    "size": "20x40",
+    "token_id": "34368519059014784809800835350608589357056"
+  },
+  {
+    "name": "Majestic Armor Shop",
+    "rarity": "legendary",
+    "size": "20x40",
+    "token_id": "38792189828986984834824705247221576105984"
+  },
+  {
+    "name": "Majestic Weapon Shop",
+    "rarity": "legendary",
+    "size": "20x40",
+    "token_id": "39132472195907923298288079854653344317440"
+  },
+  {
+    "name": "Majestic Stable",
+    "rarity": "legendary",
+    "size": "20x40",
+    "token_id": "45938119534326692567555572003288708546560"
+  },
+  {
+    "name": "Majestic Temple",
+    "rarity": "legendary",
+    "size": "20x40",
+    "token_id": "52403484505824523373359689544492304564224"
+  }
+]
