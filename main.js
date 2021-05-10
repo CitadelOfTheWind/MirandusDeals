@@ -61,7 +61,6 @@ function renderCards() {
 }
 
 function filterPageDeals() {
-  console.log($("#Token").val());
   var tokenFilter = $("#Token").val();
   var sizeFilter = $("#Size").val();
   var rarityFilter = $("#Rarity").val();
@@ -124,7 +123,7 @@ function renderDealCard(dealCard) {
 }
 
 function renderFilters(options, name) {
-  console.log(name, $(`#${name}`));
+  // console.log(name, $(`#${name}`));
   var filter = $(`#${name}`)[0];
   filter.innerHTML = "<option>All</option>";
   for (option in options) {

@@ -55,7 +55,7 @@ const getLatestAssets = new Promise((resolve, reject) => {
 });
 
 function createDealsList() {
-  console.log("making deals");
+  // console.log("making deals");
   var deals = [];
   for (shop in shopdata) {
     if (shopdata[shop].size != "") {
@@ -85,7 +85,7 @@ function createDealsList() {
 
 function getBestDiscount(shopPriceData) {
   if (shopPriceData.length == 0) return null;
-  return Math.min(...shopPriceData.map((data) => data.discount));
+  return Math.max(...shopPriceData.map((data) => data.discount));
 }
 
 function getShopDataForAllTokens(shop, storePrice) {
