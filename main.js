@@ -14,6 +14,7 @@ const tokenIcons = {
 
 function initialize() {
   renderLoading();
+  renderFilters(assetTypes, "Type");
   renderFilters(applicableTokens, "Token");
   renderFilters(Object.keys(sizeMultiplier), "Size");
   renderFilters(Object.keys(rarityMultiplier), "Rarity");
@@ -64,8 +65,14 @@ function filterPageDeals() {
   var tokenFilter = $("#Token").val();
   var sizeFilter = $("#Size").val();
   var rarityFilter = $("#Rarity").val();
+  var assetTypeFilter = $("#Type").val();
   filteredDeals = pageDeals;
 
+  if (assetTypeFilter != "All") {
+    filteredDeals = filteredDeals.filter((deal) => {
+      return assetTypeFilter == deal.shop_type;
+    });
+  }
   if (tokenFilter != "All") {
     filteredDeals = pageDeals.filter((deal) => {
       if (deal.shop_price_data && deal.shop_price_data.length > 0)
@@ -75,12 +82,12 @@ function filterPageDeals() {
   }
   if (sizeFilter != "All") {
     filteredDeals = filteredDeals.filter((deal) => {
-      return deal.shop_size && sizeFilter == deal.shop_size;
+      return sizeFilter == deal.shop_size;
     });
   }
   if (rarityFilter != "All") {
     filteredDeals = filteredDeals.filter((deal) => {
-      return deal.shop_size && rarityFilter == deal.shop_rarity;
+      return rarityFilter == deal.shop_rarity;
     });
   }
   console.log("filtered", filteredDeals);

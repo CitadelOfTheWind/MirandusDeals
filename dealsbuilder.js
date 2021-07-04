@@ -9,6 +9,7 @@ const rarityMultiplier = {
   rare: 9,
   epic: 15,
   legendary: 30,
+  ancient: 0,
 };
 
 const sizeMultiplier = {
@@ -19,14 +20,24 @@ const sizeMultiplier = {
   "20x40": 800,
 };
 
+const exemplarRarityPrices = {
+  rare: 200,
+  epic: 500,
+  legendary: 1250,
+  ancient: 5000,
+};
+
 const applicableTokens = ["ETH", "GALA", "WETH", "USDC"];
+const assetTypes = ["shop", "deed", "exemplar"];
 
 const refKey = "?ref=0x4605ed5eb12cd5d08d24d6ab0ea6c30acf9f2020";
 
 var assetList = [];
+var deedList = [];
+var exemplarList = [];
 var shopIndex = 0;
 
-function getAsset(tokenId) {
+function getAsset(type, tokenId) {
   fetch(
     `https://api.opensea.io/api/v1/asset/0xc36cf0cfcb5d905b8b513860db0cfe63f6cf9f5c/${tokenId}/`,
     { method: "GET" }
@@ -44,7 +55,7 @@ const getLatestAssets = new Promise((resolve, reject) => {
   var repeater = setInterval(function () {
     if (shopIndex < shopdata.length) {
       var tokenId = shopdata[shopIndex].token_id;
-      getAsset(tokenId);
+      getAsset(shopdata[shopIndex].type, tokenId);
       shopIndex++;
     } else {
       clearInterval(repeater);
@@ -58,27 +69,28 @@ function createDealsList() {
   // console.log("making deals");
   var deals = [];
   for (shop in shopdata) {
-    if (shopdata[shop].size != "") {
-      //var assetShop = tempAssetList.filter( //for quick testing, use saved data
-      var assetShop = assetList.filter(
-        (asset) => asset.name == shopdata[shop].name
-      )[0];
-      if (assetShop && assetShop.orders && assetShop.orders.length > 0) {
-        var storePrice = getStorePrice(shopdata[shop]);
-        var shopPriceData = getShopDataForAllTokens(assetShop, storePrice);
-        var dealCard = {
-          shop_name: assetShop.name,
-          shop_size: shopdata[shop].size,
-          shop_rarity: shopdata[shop].rarity,
-          shop_image: assetShop.image_url,
-          shop_price_data: shopPriceData,
-          store_price_usd: storePrice,
-          best_discount: getBestDiscount(shopPriceData),
-          link: assetShop.permalink + refKey,
-        };
-        deals.push(dealCard);
-      }
+    // if (shopdata[shop].size != "") {
+    //var assetShop = tempAssetList.filter( //for quick testing, use saved data
+    var assetShop = assetList.filter(
+      (asset) => asset.name == shopdata[shop].name
+    )[0];
+    if (assetShop && assetShop.orders && assetShop.orders.length > 0) {
+      var storePrice = getStorePrice(shopdata[shop]);
+      var shopPriceData = getShopDataForAllTokens(assetShop, storePrice);
+      var dealCard = {
+        shop_type: shopdata[shop].type,
+        shop_name: assetShop.name,
+        shop_size: shopdata[shop].size,
+        shop_rarity: shopdata[shop].rarity,
+        shop_image: assetShop.image_url,
+        shop_price_data: shopPriceData,
+        store_price_usd: storePrice,
+        best_discount: getBestDiscount(shopPriceData),
+        link: assetShop.permalink + refKey,
+      };
+      deals.push(dealCard);
     }
+    // }
   }
   return getBestDeals(deals);
 }
@@ -188,15 +200,12 @@ function getPricesByToken(orders, token) {
 }
 
 function getStorePrice(shop) {
-  if (shop.size != "") {
-    // console.log(
-    //   shop.size,
-    //   sizeMultiplier[shop.size],
-    //   shop.rarity,
-    //   rarityMultiplier[shop.rarity]
-    // );
+  if (shop.type == "shop") {
     return (storePrice =
       sizeMultiplier[shop.size] * rarityMultiplier[shop.rarity]);
+  } else if (shop.type == "exemplar") {
+    return exemplarRarityPrices[shop.rarity];
+  } else {
+    return shop.store_price;
   }
-  return 0;
 }

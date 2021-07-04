@@ -36,56 +36,64 @@
     <script src="https://citadelofthewind.com/wp-content/mirandusdeals/main.js?v1"></script> -->
   </head>
   <body onload="initialize()">
-    <div class="container">
-      <div class="row header">
-        <div class="col-8 title">
-          Mirandus Building Deals
-          <img
-            src="https://citadelofthewind.com/wp-content/mirandusdeals/images/alpha.png"
-            width="90"
-            height="36"
-          />
+    <div id="buildings">
+      <div class="container">
+        <div class="row header">
+          <div class="col-8 title">
+            Mirandus Deals
+            <img
+              src="https://citadelofthewind.com/wp-content/mirandusdeals/images/alpha.png"
+              width="90"
+              height="36"
+            />
+          </div>
+          <!-- <div class="col-4">
+            <input
+              type="button"
+              id="Refresh"
+              onclick="refresh()"
+              value="Refresh"
+            />
+          </div> -->
         </div>
-        <div class="col-4">
-          <input
-            type="button"
-            id="Refresh"
-            onclick="refresh()"
-            value="Refresh"
-          />
+        <div
+          class="row collapsible"
+          data-bs-toggle="collapse"
+          aria-expanded="false"
+          aria-controls="filtercontent"
+          role="button"
+          href="#filtercontent"
+        >
+          <div>Filter</div>
         </div>
-      </div>
-      <div
-        class="row collapsible"
-        data-bs-toggle="collapse"
-        aria-expanded="false"
-        aria-controls="filtercontent"
-        role="button"
-        href="#filtercontent"
-      >
-        <div>Filter</div>
-      </div>
-      <div class="row content collapse" id="filtercontent">
-        <div class="row">
-          <div class="col-1">Token</div>
-          <div class="col-2">
-            <select id="Token" onchange="filterPageDeals()"></select>
+        <div class="row content collapse" id="filtercontent">
+          <div class="row">
+            <div class="col-1">Type</div>
+            <div class="col-2">
+              <select id="Type" onchange="filterPageDeals()"></select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">Token</div>
+            <div class="col-2">
+              <select id="Token" onchange="filterPageDeals()"></select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">Size</div>
+            <div class="col-2">
+              <select id="Size" onchange="filterPageDeals()"></select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">Rarity</div>
+            <div class="col-2">
+              <select id="Rarity" onchange="filterPageDeals()"></select>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-1">Size</div>
-          <div class="col-2">
-            <select id="Size" onchange="filterPageDeals()"></select>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-1">Rarity</div>
-          <div class="col-2">
-            <select id="Rarity" onchange="filterPageDeals()"></select>
-          </div>
-        </div>
+        <div id="DealsList"></div>
       </div>
-      <div id="DealsList"></div>
     </div>
   </body>
 </html>
